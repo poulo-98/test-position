@@ -1,4 +1,6 @@
-//  this.fetchPOIs(
+window.onload = function () {
+    fetchPOIs().then(r => r);
+}
 async function fetchPOIs() {
         try {
             const position = await getCurrentPosition();
